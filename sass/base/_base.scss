@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    list-style-type : none;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: 'Shrikhand', 'Roboto', sans-serif;
+    font-size: $taille-h1;
+}
+
+h2, h6 {
+    font-size: $taille-h2-h6;
+
+}
+h3 {
+    font-size: $taille-h3;
+}
+
+h4 {
+    font-size: $taille-h4;
+}
+
+h5 {
+    font-size: $taille-h5;
+}

@@ -1,0 +1,20 @@
+.footer {
+    background-color: $couleur-footer;
+    padding: 20px;
+    &__logo {
+        font-size: $taille-h1;
+        color:white;
+    }
+    &__lien {
+        font-size: 15px;
+        li {
+            margin-top: 7px;
+        }
+        a {
+            color: white;
+        }
+        i {
+            margin-right: 10px;
+        }
+    }
+}

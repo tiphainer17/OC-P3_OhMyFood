@@ -1,0 +1,20 @@
+.recherche {
+    padding: 15px;
+    background: $couleur-recherche;
+    &__formulaire {
+        display: inline-block;
+        width: 100%;
+        text-align : center;
+        input {
+            border:none;
+            background: none;
+            font-weight: bold;
+            padding-left: 10px;
+            font-size: 15px;
+            width: 130px;
+        }
+        i, input::placeholder{ 
+            color: $couleur-recherche-texte;
+        }
+    }
+}

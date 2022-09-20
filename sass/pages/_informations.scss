@@ -1,0 +1,11 @@
+.informations {
+    background:$couleur-fond;
+    padding: 30px;
+    text-align: center;
+    &__description {
+        color:$couleur-recherche-texte;
+        font-size:17px ;
+        margin-top: 10px;
+        margin-bottom: 40px ;
+    }
+}
