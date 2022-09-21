@@ -1,0 +1,29 @@
+.heart {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -30px;
+    left:290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__icon {
+        
+      &-2 {
+        fill: url(#MyGradient);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(0);
+      }
+    }
+    &:hover {
+      .heart__icon-2 {
+        animation: heart 0.3s;
+        animation-fill-mode: forwards;
+      }
+      .heart__icon {
+        transform: scale(0);
+      }
+    }
+}

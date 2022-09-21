@@ -39,16 +39,6 @@
             padding-left:10px;
             padding-top: 2px;
         }
-        i{
-            position:relative;
-            top:-30px;
-            left: 290px;
-            &:hover {
-                background: linear-gradient($couleur-secondaire, $couleur-primaire);
-            }
-
-        }
-        
 
         .nouveau {
             background-color: $couleur-tertiaire;

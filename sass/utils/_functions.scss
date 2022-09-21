@@ -1,0 +1,9 @@
+@function eclaircissement ($couleur, $taux:10%) {
+    $new-color : lighten($couleur, $taux);
+    @return $new-color;
+}
+
+@function assombrissement ($couleur, $taux:10%) {
+    $new-color : darken($couleur, $taux);
+    @return $new-color;
+}

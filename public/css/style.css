@@ -1,5 +1,31 @@
 @charset "UTF-8";
 /*inférieur a 700px = mobile*/
+@keyframes loading {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes load-remove {
+  100% {
+    opacity: 0;
+    background-color: none;
+    z-index: -1;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -47,9 +73,55 @@ h5 {
   color: white;
   border-radius: 30px 30px 30px 30px;
   background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 1px 1px 1rem 0px rgb(200, 200, 200);
 }
 .bouton:hover {
   background: linear-gradient(#fface8, #ae80e5);
+  box-shadow: 1px 1px 1rem 0px #afafaf;
+}
+
+.load {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  animation: load-remove 3s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+.load i {
+  color: #9356DC;
+  animation: loading 2s linear 3;
+}
+
+.heart {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: -30px;
+  left: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart__icon-2 {
+  fill: url(#MyGradient);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+}
+.heart:hover .heart__icon-2 {
+  animation: heart 0.3s;
+  animation-fill-mode: forwards;
+}
+.heart:hover .heart__icon {
+  transform: scale(0);
 }
 
 .header {
@@ -200,14 +272,6 @@ h5 {
   font-size: 15px;
   padding-left: 10px;
   padding-top: 2px;
-}
-.restaurants__article i {
-  position: relative;
-  top: -30px;
-  left: 290px;
-}
-.restaurants__article i:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
 }
 .restaurants__article .nouveau {
   background-color: #99E2D0;
