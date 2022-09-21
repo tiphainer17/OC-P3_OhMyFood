@@ -27,4 +27,25 @@
     100% {
       transform: scale(1);
     }
-  }
+}
+
+@keyframes validation {
+    0% {
+        transform: scaleX(0);
+      }
+      20% {
+        transform: scaleX(0.2);
+      }
+      40% {
+        transform: scaleX(0.4);
+      }
+      60% {
+        transform: scaleX(0.6);
+      }
+      80% {
+        transform: scaleX(0.8);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+}

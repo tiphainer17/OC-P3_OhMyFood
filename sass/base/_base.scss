@@ -39,3 +39,11 @@ h4 {
 h5 {
     font-size: $taille-h5;
 }
+
+@include desktop {
+    body {
+        margin: auto;
+        width: 70%;
+        max-width: 1000px;
+    }
+}

@@ -17,4 +17,15 @@
             margin-right: 10px;
         }
     }
+
+    @include desktop {
+        &__lien {
+            display :flex;
+            justify-content: space-around;
+            @include margin-padding-section;
+            
+        }
+        
+    }
+
 }

@@ -1,14 +1,20 @@
 .fonctionnement {
-    margin-top: 35px;
-    margin-bottom: 35px;
-    padding: 15px;
+    @include margin-padding-section;
+    &__articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
     &__article {
         background:$couleur-fond;
-        border-radius: 20px 20px 20px 20px;
+        @include bordure-arrondi;
         margin:15px;
         margin-top: 25px;
-        box-shadow: 1px 1px 1rem 0px rgb(200 200 200);
+        @include ombres ;
         padding: 25px;
+        width: 100%;
+        max-width: 320px;
         display: flex;
         &:hover{
             background-color: eclaircissement($couleur-primaire,30%);
@@ -24,7 +30,7 @@
             padding: 5px;
             width: 25px;
             height: 25px;
-            border-radius: 20px;
+            @include bordure-arrondi;
             margin-left: -35px;
         }
         &__titre {

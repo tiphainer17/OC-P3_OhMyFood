@@ -1,11 +1,12 @@
 .photo-restau{
-    height: 250px;
+    height: auto;
+    max-height: 500px;
     width: 100%;
 }
 
 .restaurant {
     background: $couleur-fond;
-    border-radius: 30px 30px 0px 0px;
+    @include bordure-arrondi-top(30px);
     position: relative;
     top:-40px;
     padding: 20px;
@@ -21,23 +22,63 @@
             margin-bottom: 20px;
             text-transform: uppercase;
             color: $couleur-recherche-texte;
+            width: 40px;
+            border-bottom: solid 3px $couleur-tertiaire;
         }
-        /*&__articles {
-            display: flex;
-            flex-wrap: wrap;
-        }*/
         &__article {
             background: white;
-            border-radius: 20px;
-            box-shadow: 1px 1px 1rem 0px rgb(200 200 200);
+            @include bordure-arrondi;
+            @include ombres ;
             margin-top: 20px;
             padding: 10px;
             width: 100%;
-            /*&__desc {
-                display: inline-block;
-            }*/
+
+            &__desc, &__nom {
+                display: block;
+                width: 70%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            &__desc {
+                float: left;
+            }
+
+            &__prix {
+                font-weight: bold;
+                margin-right: 0%;
+                display: flex;
+                justify-content: flex-end
+            }
+
             &__valide {
                 display: none;
+            }
+            &:hover .restaurant__type-plat__article__valide {
+                display: block;
+                background:$couleur-tertiaire;
+                width: 15%;
+                height: 59.2px;
+                border-radius: 0 15px 15px 0;
+                transform-origin: right;
+                i{
+                    color:white;
+                }
+                
+                animation: validation ease 0.3s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        @include desktop {
+            &__articles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            &__article {
+                width: 260px;
             }
         }
         
@@ -48,5 +89,15 @@
         height: 70px;
         padding: 50px;
         padding-left: 30%;
+
+        @include desktop{
+            padding-left: 45%;
+        }
+    }
+
+    @include desktop{
+        .heart {
+            margin-left: 60%;
+        }
     }
 }
