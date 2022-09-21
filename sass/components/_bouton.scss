@@ -3,4 +3,8 @@
     color: white;
     border-radius: 30px 30px 30px 30px;
     background: linear-gradient($couleur-secondaire, $couleur-primaire);
+
+    &:hover {
+        background: linear-gradient(eclaircissement($couleur-secondaire),eclaircissement($couleur-primaire));
+    }
 }

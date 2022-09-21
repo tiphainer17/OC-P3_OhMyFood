@@ -52,7 +52,7 @@
 
         .nouveau {
             background-color: $couleur-tertiaire;
-            color:$couleur-fond;
+            color:assombrissement($couleur-tertiaire,50%);
             text-align: center;
             width: 80px;
             position: relative;

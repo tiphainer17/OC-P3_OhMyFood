@@ -48,6 +48,9 @@ h5 {
   border-radius: 30px 30px 30px 30px;
   background: linear-gradient(#FF79DA, #9356DC);
 }
+.bouton:hover {
+  background: linear-gradient(#fface8, #ae80e5);
+}
 
 .header {
   height: 60px;
@@ -135,7 +138,7 @@ h5 {
   display: flex;
 }
 .fonctionnement__article:hover {
-  background-color: #9356DC;
+  background-color: #e4d5f6;
 }
 .fonctionnement__article:hover i {
   color: #9356DC;
@@ -208,7 +211,7 @@ h5 {
 }
 .restaurants__article .nouveau {
   background-color: #99E2D0;
-  color: #f6f6f6;
+  color: #1b6150;
   text-align: center;
   width: 80px;
   position: relative;

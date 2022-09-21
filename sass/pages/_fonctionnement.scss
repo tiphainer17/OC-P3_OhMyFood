@@ -11,7 +11,7 @@
         padding: 25px;
         display: flex;
         &:hover{
-            background-color: $couleur-primaire;
+            background-color: eclaircissement($couleur-primaire,30%);
             i {
                 color: $couleur-primaire;
             }
