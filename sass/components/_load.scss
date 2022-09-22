@@ -1,4 +1,4 @@
-.load {
+html .load {
     position:fixed;
     z-index: 2;
     width: 100%;
@@ -11,11 +11,14 @@
     animation: load-remove 3s;
     animation-fill-mode: both;
     animation-delay: 4s;
-
     i {
         color:$couleur-primaire;
         animation: loading 2s linear 3;
     }
     
+    @include desktop {
+        width: 70%;
+        max-width: 1000px;
+    }
 
 }

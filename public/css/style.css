@@ -114,7 +114,7 @@ h5 {
   box-shadow: 1px 1px 1rem 0px #afafaf;
 }
 
-.load {
+html .load {
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -128,9 +128,15 @@ h5 {
   animation-fill-mode: both;
   animation-delay: 4s;
 }
-.load i {
+html .load i {
   color: #9356DC;
   animation: loading 2s linear 3;
+}
+@media screen and (min-width: 1000px) {
+  html .load {
+    width: 70%;
+    max-width: 1000px;
+  }
 }
 
 .heart {
