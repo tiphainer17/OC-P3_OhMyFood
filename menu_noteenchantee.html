@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/851553614d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"> 
+    <link rel="stylesheet" href="public/css/style.css"> 
+    <title>OhMyFood</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__retour" href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <img src="public/images/logo/ohmyfood.png" alt="logo OhMyFood class" class="header__logo">
+    </header>
+    <main>
+        <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo restau" class="photo-restau">
+        <div class="restaurant">
+            <h1 class="restaurant__titre">La note enchantée</h1>
+            <div class="heart">
+                <i class="far fa-heart heart__icon fa-lg"></i>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 heart__icon-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                    <defs>
+                        <linearGradient id="MyGradient">
+                            <stop offset="10%" stop-color="#9356dc" />
+                            <stop offset="95%" stop-color="#ff79da" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <section class="restaurant__type-plat">
+                <h5 class="restaurant__type-plat__titre">Entrées</h5>
+                <div class="restaurant__type-plat__articles">
+                    <article class="restaurant__type-plat__article">
+                        <h6 class="restaurant__type-plat__article__nom">Ravioles de foie gras</h6>
+                        <p class="restaurant__type-plat__article__desc">Accompagnés de leurs crème à la truffe</p>
+                        <p class="restaurant__type-plat__article__prix">25€</p>
+                        <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                    </article>
+                    <article class="restaurant__type-plat__article">
+                        <h6 class="restaurant__type-plat__article__nom">Caviar osciètre</h6>
+                        <p class="restaurant__type-plat__article__desc">Sur blini à la farine de blé noir</p>
+                        <p class="restaurant__type-plat__article__prix">35€</p>
+                        <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                    </article>
+                    <article class="restaurant__type-plat__article">
+                        <h6 class="restaurant__type-plat__article__nom">Homard et espuma de potiron</h6>
+                        <p class="restaurant__type-plat__article__desc">Mariné aux zestes d'orange</p>
+                        <p class="restaurant__type-plat__article__prix">20€</p>
+                        <div class="restaurant__type-plat__article__valide "><i class="fas fa-check-circle checkbox"></i></div>
+                    </article>
+                    <article class="restaurant__type-plat__article">
+                        <h6 class="restaurant__type-plat__article__nom">Foie gras de canard cuit entier</h6>
+                        <p class="restaurant__type-plat__article__desc">Confiture de figue et pain toasté</p>
+                        <p class="restaurant__type-plat__article__prix">35€</p>
+                        <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                    </article>
+                </div>
+            </section>
+            <section class="restaurant__type-plat">
+                <h5 class="restaurant__type-plat__titre">Plats</h5>
+                <div class="restaurant__type-plat__articles">
+                <article class="restaurant__type-plat__article">
+                    <h6 class="restaurant__type-plat__article__nom">Noix de coquilles Saint-Jacques</h6>
+                    <p class="restaurant__type-plat__article__desc">Sur lit de purée de céleri-rave</p>
+                    <p class="restaurant__type-plat__article__prix">40€</p>
+                    <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                </article>
+                <article class="restaurant__type-plat__article">
+                    <h6 class="restaurant__type-plat__article__nom">Langoustine poêlée</h6>
+                    <p class="restaurant__type-plat__article__desc">Purée de patate douce</p>
+                    <p class="restaurant__type-plat__article__prix">35€</p>
+                    <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                </article>
+                <article class="restaurant__type-plat__article">
+                    <h6 class="restaurant__type-plat__article__nom">Mijoté de queue de boeuf</h6>
+                    <p class="restaurant__type-plat__article__desc">Et riz sauvage aux zestes de citron</p>
+                    <p class="restaurant__type-plat__article__prix">44€</p>
+                    <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                </article>
+                </div>
+            </section>
+            <section class="restaurant__type-plat">
+                <h5 class="restaurant__type-plat__titre">Desserts</h5>
+                <div class="restaurant__type-plat__articles">
+                <article class="restaurant__type-plat__article">
+                    <h6 class="restaurant__type-plat__article__nom">Macaron noisette et chocolat</h6>
+                    <p class="restaurant__type-plat__article__desc">Glace au caramel brun et sel de Guérande</p>
+                    <p class="restaurant__type-plat__article__prix">18€</p>
+                    <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                </article>
+                <article class="restaurant__type-plat__article">
+                    <h6 class="restaurant__type-plat__article__nom">Baba au rhum revisité</h6>
+                    <p class="restaurant__type-plat__article__desc">Avec son coulis de citron</p>
+                    <p class="restaurant__type-plat__article__prix">22€</p>
+                    <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                </article>
+                <article class="restaurant__type-plat__article">
+                    <h6 class="restaurant__type-plat__article__nom">Tarte au citron meringuée </h6>
+                    <p class="restaurant__type-plat__article__desc">Déstructurée</p>
+                    <p class="restaurant__type-plat__article__prix">23€</p>
+                    <div class="restaurant__type-plat__article__valide"><i class="fas fa-check-circle checkbox"></i></div>
+                </article>
+                </div>
+            </section>
+            <div class="restaurant__bouton">
+                <a href="#" class="bouton">Commander</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h1 class="footer__logo">ohmyfood</h1>
+        <ul class="footer__lien">
+            <li>
+                <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</a>
+            </li>
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:ohmyfood@mail.fr">Contact</a>
+            </li>
+        </ul>
+    </footer>  
+</body>
+</html>
