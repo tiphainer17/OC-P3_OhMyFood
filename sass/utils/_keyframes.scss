@@ -29,6 +29,17 @@
     }
 }
 
+@keyframes apparition {
+  0%{
+    scale: 0.1;
+  }
+  100%{
+    scale:1;
+    opacity:1;
+  }
+}
+
+
 @keyframes validation {
     0% {
         transform: scaleX(0);

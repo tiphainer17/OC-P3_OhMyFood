@@ -15,14 +15,14 @@
     &__article {
         height: 250px;
         width: 340px;
-        @include bordure-arrondi(10px);
+        @include bordure-arrondi(20px);
         margin-bottom: 30px;
         background: white;
         @include ombres ;
        
 
         &__img {
-            @include bordure-arrondi-top(10px);
+            @include bordure-arrondi-top(20px);
             width: 100%;
             height: 70%;
             object-fit: cover;
